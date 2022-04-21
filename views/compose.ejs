@@ -1,0 +1,19 @@
+<%- include("header") -%>
+<H1>Compose</H1>
+<form action="/compose" method="post">
+
+    <div class="form-floating mb-3">
+        <label for="floatingInput">Heading</label>
+        <input name="heading" type="text" class="form-control" id="floatingInput" placeholder="heading">
+        
+    </div>
+    <div class="form-floating">
+        <label for="floatingTextarea2">Content</label>
+        <textarea name="body" class="form-control" placeholder="make a post" id="floatingTextarea2" style="height: 100px"></textarea>
+        
+      </div>
+      <br>
+      <button type="submit" class="btn btn-success" name="submit" value="hello">Post</button>
+    
+</form>
+<%- include("footer") -%>

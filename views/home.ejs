@@ -1,0 +1,13 @@
+<%- include("header") -%>
+<H1>Home</H1>
+<p><%= starting %></p>
+<form action="/post" method="post">
+<ul>
+
+    <%for (var i=0;i < posts.length;i++){ %>
+        <h3>Day <%= posts[i].heading %> </h3>
+        <p> <%= posts[i].content.substring(0,50) %> <a href="/posts/<%= posts[i].heading %>"> Read more </a>  </p>
+            <%}%>
+</ul>
+</form>
+<%- include("footer") -%>
